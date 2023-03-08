@@ -1,6 +1,7 @@
-const {number } = require ('../fizzBuzz');
-const {fizzBuzz} = require ('../fizzBuzz');
+const { default: expect } = require('expect');
 
-test ('number is divisible by 3 and 5',() =>{
-    expect(fizzBuzz.fizzBuzz(3,5)).toBe(15);
-} )
+const fizzBuzz = require('../fizzBuzz');
+
+test('numero divisible by 3 and 5', () => {
+    expect(fizzBuzz(15)).toBe('FizzBuzz');//
+})
